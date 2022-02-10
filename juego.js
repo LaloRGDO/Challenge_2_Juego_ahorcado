@@ -19,8 +19,8 @@ function sortearPalabra(){
     for(let letra of palabra){
         letras.push(letra)
     }
-    console.log(letras);
-    console.log(letras.length);
+    //console.log(letras);
+    //console.log(letras.length);
 }
 
 function dibujarLineas(){
@@ -66,7 +66,7 @@ function teclearLetra(){
                 if(letra=="À"){
                     letra="Ñ";
                 }
-                console.log(letra);
+                //console.log(letra);
                 acomodarLetras();
             }
         }
@@ -82,7 +82,7 @@ function acomodarLetras(){
             escribirTexto(letra,"black",espacioCorrecto,325);
             letrasCorrectasTecleadas.push(letra);
             aciertos+=1;
-            console.log(letrasCorrectasTecleadas);
+            //console.log(letrasCorrectasTecleadas);
         }else{
             for(var x=0;x<letras.length;x++){
                 if(letra == letras[x]){
