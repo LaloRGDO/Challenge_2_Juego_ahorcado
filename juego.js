@@ -118,7 +118,7 @@ function acomodarLetras(){
 
 function contarOportunidades(){
     if(aciertos == letras.length){
-        escribirMensaje("GANASTE PERRO!", "green", 410,170);
+        escribirMensaje("FELICIDADES, GANASTE!", "green", 410,170);
         finJuego = true;
         if(cantidadDeJuegos==0){
             var boton = document.createElement("button");

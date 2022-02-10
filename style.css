@@ -99,6 +99,15 @@ canvas{
     color: white;
 }
 
+footer{
+    height: auto;
+    width: 100%;
+    background-color: rgb(93, 13, 223);
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
 @media(min-width:1200px){
     .col-lg-12{width: 100%;}
     .col-lg-11{width: 91.66666667%;}
