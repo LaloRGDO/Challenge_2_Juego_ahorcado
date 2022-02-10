@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="Eduardo Reséndez">
+	<meta name="description" content="Juego del ahorcado">
+	<meta name="keywords" content="juego, ahorcado, juego del ahorcado, juego del ahorcado online">
+	<link rel="icon" href="icono.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet" media="">
+	<title>Juego del Ahorcado</title>
+</head>
+<body>
+	<main>
+		<headr class="fila">
+			<h2>Juego del Ahorcado! X_X</h2>
+			<button class="boton" id="iniciar-juego" onclick="location.href='#canvas';">Iniciar juego!</button>
+		</header>
+		<div class="fila">
+			<input id="ingresar-palabra" type = "text" placeholder="Escriba nueva palabra para agregarla al juego">
+			<button class="boton" id="agregar-palabra">Agregar palabra</button>
+		</div>
+		<canvas id="canvas" width="800" height="360"></canvas>
+		<div id="volverAJugar"></div>
+	</main>
+	<script src="agregar_palabra.js"></script>
+	<script src="canvas.js"></script>
+	<script src="juego.js"></script>
+	<script src ="ejercicios.js"></script>
+</body>
+
+</html>

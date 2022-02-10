@@ -1,0 +1,170 @@
+/*font-family: 'Architects Daughter', cursive;*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.fila{
+    width: 100vw;
+    height: auto;
+}
+
+h2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 4.5vw;
+    text-align: center;
+    color: black;
+    margin-top: 2vh;
+}
+
+#iniciar-juego{
+    width: 15%;
+    height: auto;
+    margin-right: 42.5%;
+    margin-left: 42.5%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    background-color: blueviolet;
+    font-size: 2vw;
+    color: white;
+    border-radius: 1vw;
+}
+
+input{
+    width: 40%;
+    margin: 3vw 30% 2vw;
+    height: 10vh;
+    border-radius: 2vh;
+}
+#agregar-palabra{
+    width: 20%;
+    height: auto;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 3vw;
+    background-color: blueviolet;
+    font-size: 2vw;
+    color: white;
+    border-radius: 1vw;
+}
+
+canvas{
+    border: 2px solid black;
+    width: 100vw;
+    height: 45vw;
+    margin: 1vw auto;
+}
+
+.botonJugarDenuevo{
+    width: 15%;
+    height: auto;
+    margin-right: 42.5%;
+    margin-left: 42.5%;
+    margin-top: 0;
+    margin-bottom: 3vw;
+    background-color: blueviolet;
+    font-size: 2vw;
+    color: white;
+    border-radius: 1vw;
+}
+
+#iniciar-juego:hover{
+    background-color: rgb(139, 7, 248);
+}
+
+#iniciar-juego:active{
+    background-color: rgb(108, 92, 255);
+    color: white;
+}
+
+#agregar-palabra:hover{
+    background-color: rgb(139, 7, 248);
+}
+
+#agregar-palabra:active{
+    background-color: rgb(108, 92, 255);
+    color: white;
+}
+
+.botonJugarDenuevo:hover{
+    background-color: rgb(139, 7, 248);
+}
+
+.botonJugarDenuevo:active{
+    background-color: rgb(108, 92, 255);
+    color: white;
+}
+
+@media(min-width:1200px){
+    .col-lg-12{width: 100%;}
+    .col-lg-11{width: 91.66666667%;}
+    .col-lg-10{width: 83.33333333%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-7{width: 58.3333333%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-5{width: 41.6666667%;}
+    .col-lg-4{width: 33.33333333%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width: 16.66666667%;}
+    .col-lg-1{width: 8.33333333%;}
+	.col-lg-0{display:none;}
+}
+
+/*Pantalla de escritorio mediano - MEDIUM (md)*/
+
+@media(max-width:1199px) and (min-width:992px){
+    .col-md-12{width: 100%;}
+    .col-md-11{width: 91.66666667%;}
+    .col-md-10{width: 83.33333333%;}
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-7{width: 58.3333333%;}
+    .col-md-6{width: 50%;}
+    .col-md-5{width: 41.6666667%;}
+    .col-md-4{width: 33.33333333%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width: 16.66666667%;}
+    .col-md-1{width: 8.33333333%;}
+	.col-md-0{display:none;}
+}
+
+/*Pantalla de escritorio pequeño - SMALL (sm)*/
+
+@media(max-width:991px) and (min-width:768px){
+    .col-sm-12{width: 100%;}
+    .col-sm-11{width: 91.66666667%;}
+    .col-sm-10{width: 83.33333333%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.66666667%;}
+    .col-sm-7{width: 58.3333333%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-5{width: 41.6666667%;}
+    .col-sm-4{width: 33.33333333%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width: 16.66666667%;}
+    .col-sm-1{width: 8.33333333%;}
+	.col-sm-0{display:none;}
+}
+
+/*Pantalla de escritorio extra pequeño - EXTRA SMALL (xs)*/
+
+@media(max-width:767px){
+    .col-xs-12{width: 100%;}
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-10{width: 83.33333333%;}
+    .col-xs-9{width: 75%;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-7{width: 58.3333333%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.6666667%;}
+    .col-xs-4{width: 33.33333333%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width: 16.66666667%;}
+    .col-xs-1{width: 8.33333333%;}
+	.col-xs-0{display:none;}
+}
