@@ -5,7 +5,9 @@ var botonAgregar = document.querySelector("#agregar-palabra");
 botonAgregar.addEventListener("click", function(event){
     event.preventDefault();
     palabras.push(palabraNueva.value.toUpperCase());
+    localStorage.setItem("palabras", palabras);
     console.log(palabras);
     palabraNueva.value = "";
 });
+
 
