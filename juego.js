@@ -17,10 +17,12 @@ function sortearPalabra(){
     var posicion = Math.round(Math.random()*(palabras.length-1));
     palabra = palabras[posicion];
     for(let letra of palabra){
-        letras.push(letra)
+        if(letra == " "){
+            letras.push('-');
+        }else{
+            letras.push(letra);
+        }
     }
-    //console.log(letras);
-    //console.log(letras.length);
 }
 
 function dibujarLineas(){
@@ -39,7 +41,7 @@ function dibujarLineas(){
 function teclearLetra(){
     document.onkeydown = function(event){
         //Capturar evento de tecla
-        var abecedario = ["À","A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+        var abecedario = ["À","A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z", " "];
         var letraAceptada = true;
         var letraCorrectaRepetida = true;
         if(event == null){
@@ -63,10 +65,12 @@ function teclearLetra(){
             }
             if(letraAceptada && letraCorrectaRepetida && finJuego==false){
                 letra=String.fromCharCode(event.keyCode);
+                console.log(letra);
                 if(letra=="À"){
                     letra="Ñ";
+                }else if(letra == " "){
+                    letra = "-";
                 }
-                //console.log(letra);
                 acomodarLetras();
             }
         }
@@ -82,7 +86,6 @@ function acomodarLetras(){
             escribirTexto(letra,"black",espacioCorrecto,325);
             letrasCorrectasTecleadas.push(letra);
             aciertos+=1;
-            //console.log(letrasCorrectasTecleadas);
         }else{
             for(var x=0;x<letras.length;x++){
                 if(letra == letras[x]){
@@ -106,7 +109,6 @@ function acomodarLetras(){
             }
         }
         if(letraIncorrectaRepetida == false){
-            console.log("Tecla incorrecta dd");
             escribirTexto(letra,"black",espacioIncorrecto,280);
             espacioIncorrecto+=23;
             oportunidad+=1;
